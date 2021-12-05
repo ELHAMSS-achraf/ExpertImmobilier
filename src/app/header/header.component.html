@@ -1,0 +1,48 @@
+<nav class="nav">
+    <div class="container-fluid">
+        <div class="logo" style="margin-left: 2%;">
+            <a href="#"><img style="width: 250px; height: 35px; margin-top: 0%;" src="../../assets/img/logoRSwhite.png" alt=""></a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a routerLink="/Home">Home</a></li>
+                <li><a><button type="button" (click)="log()" class="btn btn-outline-primary button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDeclare" aria-controls="offcanvasScrolling">Declare</button></a></li>
+                <li><a><button type="button" class="btn btn-outline-primary"data-bs-toggle="offcanvas" data-bs-target="#offcanvasWay" aria-controls="offcanvasScrolling">Itinerary</button></a></li>
+                <li *ngIf="currentPage == 'register'"><a routerLink="/Login"><button type="button" class="btn btn-warning">Log in</button></a></li>
+                <li *ngIf="currentPage == 'login'"><a routerLink="/Regiter"><button type="button" class="btn btn-warning">Register</button></a></li>
+                <li *ngIf="currentPage == 'map'"><a><button type="button" class="btn btn-warning" (click)="logOut()">Log out</button></a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+    </div>
+  </nav>
+  
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasDeclare" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <app-danger [pt]="point"></app-danger>
+  </div>
+</div>
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasWay" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <app-safest-way></app-safest-way>
+    </div>
+  </div>
+
+
+
+  
+  
+  
+  

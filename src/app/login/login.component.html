@@ -1,0 +1,14 @@
+<div>
+                 
+    <form [formGroup]='userForm' (ngSubmit)="logIn()" class="box">
+        <h1 style="margin: 30px;"> <b> LOGIN  </b></h1>
+        <p class="testForm" style="color: white;
+        font-size: large;"> Please enter your login and password</p> 
+        <input type="text" formControlName="name" placeholder="Username"> 
+        <input type="password" formControlName="password"  placeholder="Password"> 
+        <a class="forgot testForm" routerLink="/Register">Create an account</a> 
+        <button type="submit">Login</button>
+    </form>
+    <br> <br> <br> <br>
+</div>
+    

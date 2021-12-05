@@ -1,0 +1,56 @@
+<div class="home col-md-6 mx-auto">
+    <div class="main col-md-6 mx-auto">
+    <div class="container">
+        <div class="row" >
+            <div class="col-md-6 mx-auto">
+                <div class="card col-md-6 col-xm-12">
+                    <form [formGroup]="userForm" (ngSubmit)="onSubmit()"  class="box" >
+                        <h1><b>Register</b></h1>
+                    
+                        <p class="testForm"> Please enter your correct informations!</p>  -->
+                   <!-- name  -->
+                   
+                        <input type="text" formControlName="name"   placeholder="Username">
+                        <div  *ngIf="userForm.get('name')?.errors && (userForm.get('name')?.touched || userForm.get('name')?.dirty)" class="err">
+                            <span *ngIf="userForm.get('name')?.errors?.required" >
+                                Username is required*
+                            </span>
+                            <span *ngIf="userForm.get('name')?.errors?.minlength || userForm.get('name')?.errors?.maxlength">
+                                Username must be greater than 2 characters and less than 10 characters
+                            </span>
+                        </div>
+                        
+                   <!-- email -->
+                    <div  [ngClass]="{'': userForm.get('email')?.errors && (userForm.get('email')?.touched || userForm.get('email')?.dirty)}" >
+                        <input type="text" formControlName="email" placeholder="Email"> 
+                        <span class="help-block" *ngIf="userForm.get('email')?.errors && (userForm.get('email')?.touched || userForm.get('email')?.dirty)" class="err">
+                            <span *ngIf="userForm.get('email')?.errors?.required">
+                                Email is required*
+                            </span>
+                            <span *ngIf="userForm.get('email')?.errors?.pattern && (userForm.get('email')?.touched ) ">
+                                Enter a valid email address
+                            </span>
+                        </span>
+                    </div>
+                    <!-- password -->
+                    <div [ngClass]="{'': userForm.get('password')?.errors && (userForm.get('password')?.touched || userForm.get('password')?.dirty)}">
+                        <input type="password" formControlName="password" placeholder="Password"> 
+                        <span class="help-block" *ngIf="userForm.get('password')?.errors && (userForm.get('password')?.touched || userForm.get('password')?.dirty)" class="err">
+                            <span *ngIf="userForm.get('password')?.errors?.required">
+                                Password is required*
+                            </span>
+                            <span *ngIf="userForm.get('password')?.errors?.pattern">
+                                Password should contain more than 6 characters
+                            </span>
+                        </span> 
+                    </div>
+                        <a class="create testForm" routerLink="/Login">Have already an Account?</a> 
+                        <button type="submit">register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </div>

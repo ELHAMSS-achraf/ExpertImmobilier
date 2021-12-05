@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap');
+
+* {
+    
+    font-family: "Poppins";
+
+}
+
+.box {
+    width: 500px;
+    padding: 40px;
+    margin-left: 38%;
+    background: black;
+    border: 2px solid #90148b;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.25s;
+    margin-top: 7%;
+    
+}
+::placeholder {
+    color: rgb(155, 152, 152);
+   
+}
+
+.box input[type="text"],
+.box input[type="password"] {
+    font-size: large;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #90148b;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    color: white;
+    border-radius:  8px;
+    transition: 0.25s
+}
+
+.box h1 {
+    color: #90148b;
+    text-transform: uppercase;
+    font-weight: 400
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    width: 300px;
+    border-color: #90148b
+}
+
+.box button{
+    border: 0;
+    height: 45px;
+    line-height: 15px;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #90148b;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 8px;
+    transition: 0.25s;
+    cursor: pointer;
+    
+    font-size: large;
+}
+
+.box button:hover {
+    background: #90148b;
+    
+}  
+
+.forgot{
+    text-decoration: underline;
+    color: white;
+}

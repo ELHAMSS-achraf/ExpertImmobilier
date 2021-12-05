@@ -1,0 +1,31 @@
+:root{
+    --prim: #1e66b3;
+    --secon: #90148b;
+
+}
+.navbar{
+    background-color: black;
+}
+.navbar-brand{
+    color: white;
+    margin-left: 10%;
+    margin-right: 20%;
+}
+.nav-link {
+    cursor: pointer;
+    text-align: center;
+    margin-right: 1em;
+    color: white;
+    
+}
+.nav-carto{
+    border: #90148b solid 2px;
+    border-radius: 8px;
+}
+.nav-link:hover{
+    border-radius: 8px;
+	background: #90148b;
+	color: black;
+    
+
+}

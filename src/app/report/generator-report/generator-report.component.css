@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.input{
+    width: 18em;
+    margin-bottom: 2%;
+    
+}
+.title{
+    
+    padding : 3%
+}
+.form-group{
+    margin-left: 20%;
+}
+.part-1{
+   border: solid 1px;
+   border-radius: 7px;
+   margin-left:20% ;
+   margin-right: 20%;
+  
+   margin-bottom: 3%;
+
+}
+
+.part-1{
+  background-color: rgb(235, 241, 243);
+}
+.bar{
+  background-color: #90148b;
+  border-radius: 5px 5px 0px 0px ;
+  height: 5px;
+}
+.title-part{
+  margin-top: 1.5%;
+  margin-left: 10%;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }.input{
+    width: 18em;
+    margin-bottom: 2%;
+    
+}
+.title{
+    text-align: center;
+    padding : 3%
+}
+.form-group{
+    margin-left: 20%;
+}
+.part-1{
+   border: solid 1px;
+   border-radius: 7px;
+   margin-left:20% ;
+   margin-right: 20%;
+  
+   margin-bottom: 3%;
+
+}
+
+.part-1{
+  background-color: rgb(235, 241, 243);
+}
+.bar{
+  background-color: #90148b;
+  border-radius: 5px 5px 0px 0px ;
+  height: 5px;
+}
+.title-part{
+  margin-top: 1.5%;
+  margin-left: 10%;
+}
+* {
+    box-sizing: border-box;
+    
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  button{
+    border: 0;
+    height: 5%;
+    width: 40%;
+    line-height: 15px;
+    background-color:rgb(235, 241, 243) ;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #90148b;
+    padding: 14px 40px;
+    outline: none;
+    color: black;
+    border-radius: 8px;
+    transition: 0.25s;
+    cursor: pointer;
+    
+    font-size: large;
+}
+
+button:hover {
+    background: #90148b;
+    color: white;
+}

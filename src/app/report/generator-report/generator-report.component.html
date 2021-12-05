@@ -1,0 +1,681 @@
+
+<div class="title">
+  <h1>veuiller remplir le formulaire </h1>
+</div>
+
+<form (submit)="onSubmit('')"> 
+<!-- part 1 -->
+<div class="part-1" style="background-color: rgb(235, 241, 243);">
+<div class="bar"></div>
+<h2 class="title-part">LA MISSION </h2>
+<div class="row">
+  <div class="column" >
+      
+          <div class="form-group">
+          <label for="var-1"> Nom & prenom </label>
+          <input id="name"  type="text" class="form-control input">
+
+          <label for="var-1"> Propriété dite </label>
+          <input id="Pptedite" type="text" class="form-control input">
+  
+          <label for="var-2"> Titre Foncier </label>
+          <input id="TF" type="text" class="form-control input">
+
+          <label for="var-3"> Adresse </label>
+          <input id="adresse" type="text" class="form-control input">
+
+          <label for="var-1">  Valeur vénal (MAD) </label>
+          <input id="var-1" type="number" class="form-control input">
+
+
+         
+          </div>
+      
+  </div>
+  <div class="column">
+      
+      <div class="form-group">
+          <label for="var-1">  Qualité requerant </label>
+          <input id="qualite" type="text" class="form-control input">
+
+          <label for="var-3"> Date de visite</label>
+          <input id="date" type="date" class="form-control input">
+
+          <label for="var-4"> Methodes d’évaluation  </label><br>
+          <input id="mtd1" type="text" class="form-control input">
+          <input id="mtd2" type="text" class="form-control input">
+          <input id="mtd3" type="text" class="form-control input">
+
+          <label for="var-5"> Image </label>
+          <input id="img" type="text" class="form-control input">
+          </div>
+          
+      
+  </div>
+</div> 
+</div>
+
+<!-- part 2 -->
+<div class="part-1">
+  <div class="bar"></div>
+  <h2 class="title-part">LE SITE</h2>
+  <div class="row">
+      <div class="column" >
+          
+              <div class="form-group">
+              <label for="var-1"> Nom du dossier </label>
+              <input id="dossier" type="text" class="form-control input">
+             
+              <label for="var-3"> date d'expertise</label>
+              <input id="exp" type="date" class="form-control input">
+      
+              <label for="var-2"> adresse des actifs </label>
+              <input id="actif" type="text" class="form-control input">
+
+              </div>
+          
+      </div>
+      <div class="column">
+          
+          <div class="form-group">
+              <label for="var-1">  Commune </label>
+              <input id="commune" type="text" class="form-control input">
+
+          
+              <label for="var-1">  Surface globale des biens (m²)</label>
+              <input id="surface" type="number" class="form-control input">
+              </div>
+          
+      </div>
+  </div> 
+</div>
+<!-- part 3 -->
+<div class="part-1">
+<div class="bar"></div>
+<h2 class="title-part">   SITUATION</h2>
+<div class="row">
+  <div class="column" >
+      
+          <div class="form-group">
+                  <label for="var-3" > Plein centre :  </label>
+                    
+                  <div class="form-check" style="margin-left: 10%;">
+                      <input class="form-check-input" type="radio" name="1" id="OUI" value="option1" checked>
+                      <label class="form-check-label" for="exampleRadios1">
+                        oui
+                      </label>
+                    </div>
+                    <div class="form-check" style="margin-left: 10%;">
+                      <input class="form-check-input" type="radio" name="1" id="NON" value="option2">
+                      <label class="form-check-label" for="exampleRadios2">
+                       non
+                      </label>
+                    </div><br>
+                 
+
+                  <label for="var-3" style="margin-right: 46px;">Proche centre (300) :  </label>
+                  <div class="form-check" style="margin-left: 10%;">
+                      <input class="form-check-input" type="radio" name="2" id="centre" value="option1" checked>
+                      <label class="form-check-label" for="exampleRadios1">
+                        oui
+                      </label>
+                    </div>
+                    <div class="form-check" style="margin-left: 10%;">
+                      <input class="form-check-input" type="radio" name="2" id="centre2" value="option2">
+                      <label class="form-check-label" for="exampleRadios2">
+                       non
+                      </label>
+                    </div><br>
+                  
+
+                  <label for="var-3" style="margin-right: 112px;">Périphérie :  </label>
+                  <div class="form-check" style="margin-left: 10%;">
+                      <input class="form-check-input" type="radio" name="3" id="per" value="option1" checked>
+                      <label class="form-check-label" for="exampleRadios1">
+                        oui
+                      </label>
+                    </div>
+                    <div class="form-check" style="margin-left: 10%;">
+                      <input class="form-check-input" type="radio" name="3" id="per2" value="option2">
+                      <label class="form-check-label" for="exampleRadios2">
+                       non
+                      </label>
+                    </div><br>
+
+                  <label for="var-3" style="margin-right: 76px;">Terrains sur rue :  </label>
+                  <div class="form-check" style="margin-left: 10%;">
+                      <input class="form-check-input" type="radio" name="4" id="rue" value="option1" checked>
+                      <label class="form-check-label" for="exampleRadios1">
+                        oui
+                      </label>
+                    </div>
+                    <div class="form-check" style="margin-left: 10%;">
+                      <input class="form-check-input" type="radio" name="4" id="rue2" value="option2">
+                      <label class="form-check-label" for="exampleRadios2">
+                       non
+                      </label>
+                    </div> <br>
+
+                  <h4>Observations</h4>
+
+                  <label for="var-1">  Commerces : </label><br>
+                  <textarea class="form-control" id="commerce" name="message" rows="5" style="width: 70%;"></textarea>
+
+                  <label for="var-1">  Services :</label><br>
+                  <textarea class="form-control" id="service" name="message" rows="5" style="width: 70%;"></textarea>
+              
+          </div>    
+
+     
+  </div>
+  <div class="column">
+      
+      <div class="form-group">
+                      <label for="var-3" style="margin-right: 112px;">Mitoyen :  </label>
+                      <div class="form-check" style="margin-left: 10%;">
+                          <input class="form-check-input" type="radio" name="5" id="Mitoyen" value="option1" checked>
+                          <label class="form-check-label" for="exampleRadios1">
+                            oui
+                          </label>
+                        </div>
+                        <div class="form-check" style="margin-left: 10%;">
+                          <input class="form-check-input" type="radio" name="5" id="Mitoyen2" value="option2">
+                          <label class="form-check-label" for="exampleRadios2">
+                           non
+                          </label>
+                        </div> <br>
+
+                      <label for="var-3" > Vis-à-vis :  </label>
+                      <div class="form-check" style="margin-left: 10%;">
+                          <input class="form-check-input" type="radio" name="6" id="vis" value="option1" checked>
+                          <label class="form-check-label" for="exampleRadios1">
+                            oui
+                          </label>
+                        </div>
+                        <div class="form-check" style="margin-left: 10%;">
+                          <input class="form-check-input" type="radio" name="6" id="vis2" value="option2">
+                          <label class="form-check-label" for="exampleRadios2">
+                           non
+                          </label>
+                        </div> <br>
+                 
+
+                  <label for="var-3" style="margin-right: 77px;">Espaces verts :  </label>
+                  <div class="form-check" style="margin-left: 10%;">
+                      <input class="form-check-input" type="radio" name="7" id="vert" value="option1" checked>
+                      <label class="form-check-label" for="exampleRadios1">
+                        oui
+                      </label>
+                    </div>
+                    <div class="form-check" style="margin-left: 10%;">
+                      <input class="form-check-input" type="radio" name="7" id="vert2" value="option2">
+                      <label class="form-check-label" for="exampleRadios2">
+                       non
+                      </label>
+                    </div> <br><br><br><br><br><br>
+
+                  <label for="var-1" style="margin-top: 12px;">  Ecoles : </label><br>
+                  <textarea class="form-control" id="ecole" name="message" rows="5" style="width: 70%;" ></textarea>
+
+                  <label for="var-1">  Transport :</label><br>
+                  <textarea class="form-control" id="trsp" name="message" rows="5" style="width: 70%;"></textarea>
+                    
+      </div>
+      
+  </div>
+
+</div>
+<br> 
+</div>
+
+<!-- part 4 -->
+<div class="part-1">
+<div class="bar"></div>
+
+<div class="row">
+  <div class="column" >
+      
+          <div class="form-group">
+              <h4>Risques</h4>
+              <label for="var-3" style="margin-right: 197px;">Remblais :  </label>
+              <div class="form-check" style="margin-left: 10%;">
+                  <input class="form-check-input" type="radio" name="8" id="Remblais" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    oui
+                  </label>
+                </div>
+                <div class="form-check" style="margin-left: 10%;">
+                  <input class="form-check-input" type="radio" name="8" id="Remblais2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                   non
+                  </label>
+                </div> <br>
+              <label for="var-3" style="margin-right: 132px;">Présence de cuves :  </label>
+              <div class="form-check" style="margin-left: 10%;">
+                  <input class="form-check-input" type="radio" name="9" id="cuve" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    oui
+                  </label>
+                </div>
+                <div class="form-check" style="margin-left: 10%;">
+                  <input class="form-check-input" type="radio" name="9" id="cuve2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                   non
+                  </label>
+                </div> <br>
+              <label for="var-3" style="margin-right: 50px;">Anciennes activités polluantes :  </label>
+              <div class="form-check" style="margin-left: 10%;">
+                  <input class="form-check-input" type="radio" name="10" id="activite" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    oui
+                  </label>
+                </div>
+                <div class="form-check" style="margin-left: 10%;">
+                  <input class="form-check-input" type="radio" name="10" id="activite2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                   non
+                  </label>
+                </div> <br>
+              <label for="var-3" style="margin-right: 118px;">Prescriptions archéo :  </label>
+              <div class="form-check" style="margin-left: 10%;">
+                  <input class="form-check-input" type="radio" name="11" id="archeo" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    oui
+                  </label>
+                </div>
+                <div class="form-check" style="margin-left: 10%;">
+                  <input class="form-check-input" type="radio" name="11" id="archeo2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                   non
+                  </label>
+                </div> <br>
+              <label for="var-3" style="margin-right: 67px;">Présence de transformateur  :  </label>
+              <div class="form-check" style="margin-left: 10%;">
+                  <input class="form-check-input" type="radio" name="12" id="trans" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    oui
+                  </label>
+                </div>
+                <div class="form-check" style="margin-left: 10%;">
+                  <input class="form-check-input" type="radio" name="12" id="trans2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                   non
+                  </label>
+                </div> <br>
+              <label for="var-3" style="margin-right: 184px;">Inondation :  </label>
+              <div class="form-check" style="margin-left: 10%;">
+                  <input class="form-check-input" type="radio" name="13" id="ino" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    oui
+                  </label>
+                </div>
+                <div class="form-check" style="margin-left: 10%;">
+                  <input class="form-check-input" type="radio" name="13" id="ino2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                   non
+                  </label>
+                </div> <br>
+              <label for="var-3" style="margin-right: 93px;">Reprises-en sous œuvre  :  </label>
+              <div class="form-check" style="margin-left: 10%;">
+                  <input class="form-check-input" type="radio" name="14" id="ouvre" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    oui
+                  </label>
+                </div>
+                <div class="form-check" style="margin-left: 10%;">
+                  <input class="form-check-input" type="radio" name="14" id="ouvre2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                   non
+                  </label>
+                </div> <br>
+              <label for="var-3" style="margin-right: 75px;">Présence d’une voie ferrée :  </label>
+              <div class="form-check" style="margin-left: 10%;">
+                  <input class="form-check-input" type="radio" name="15" id="voi" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    oui
+                  </label>
+                </div>
+                <div class="form-check" style="margin-left: 10%;">
+                  <input class="form-check-input" type="radio" name="15" id="voi2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                   non
+                  </label>
+                </div> <br>
+                <label for="var-1">  Observations particulieres : </label><br>
+                <textarea class="form-control" id="obs" name="message" rows="5" style="width: 70%;"></textarea>
+            
+                <label for="var-1">  Hypothéses particulieres : </label><br>
+                <textarea class="form-control" id="hyp" name="message" rows="5" style="width: 70%;"></textarea>
+            
+
+
+         
+          </div>
+  </div>
+  <div class="column">
+     
+      <div class="form-group">
+          <h4>Nuissances</h4>
+          <label for="var-3" style="margin-right: 144px;">Sonores :  </label>
+          <div class="form-check" style="margin-left: 10%;">
+              <input class="form-check-input" type="radio" name="16" id="sono" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                oui
+              </label>
+            </div>
+            <div class="form-check" style="margin-left: 10%;">
+              <input class="form-check-input" type="radio" name="16" id="sono2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+               non
+              </label>
+            </div> <br>
+              <label for="var-3" style="margin-right: 50px;">Ligne à haute tension  :  </label>
+              <div class="form-check" style="margin-left: 10%;">
+                  <input class="form-check-input" type="radio" name="17" id="ligne" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    oui
+                  </label>
+                </div>
+                <div class="form-check" style="margin-left: 10%;">
+                  <input class="form-check-input" type="radio" name="17" id="ligne2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                   non
+                  </label>
+                </div> <br>
+              <label for="var-3" style="margin-right: 140px;">Visuelles :  </label>
+              <div class="form-check" style="margin-left: 10%;">
+                  <input class="form-check-input" type="radio" name="18" id="visu" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    oui
+                  </label>
+                </div>
+                <div class="form-check" style="margin-left: 10%;">
+                  <input class="form-check-input" type="radio" name="18" id="visu2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                   non
+                  </label>
+                </div> <br>
+              <label for="var-3" style="margin-right: 133px;">Olfactives :  </label>
+              <div class="form-check" style="margin-left: 10%;">
+                  <input class="form-check-input" type="radio" name="19" id="fact" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    oui
+                  </label>
+                </div>
+                <div class="form-check" style="margin-left: 10%;">
+                  <input class="form-check-input" type="radio" name="19" id="fact2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                   non
+                  </label>
+                </div> <br>
+      </div>
+      
+  </div>
+</div>
+<br> 
+</div>
+
+<!-- part 5 -->
+<div class="part-1" >
+<div class="bar"></div>
+<h2 class="title-part">PRESENTATION DU BIEN</h2>
+<div class="row">
+  <div class="column" >
+      
+          <div class="form-group">
+
+              <label for="var-3" style="margin-right: 50px;">Nature de l’actif   :  </label>
+              <div class="form-check" style="margin-left: 10%;">
+                  <input class="form-check-input" type="radio" name="17" id="ter" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                      Terrain
+                  </label>
+                </div>
+                <div class="form-check" style="margin-left: 10%;">
+                  <input class="form-check-input" type="radio" name="17" id="bur" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                      Bureau
+                  </label>
+                </div> 
+                <div class="form-check" style="margin-left: 10%;">
+                    <input class="form-check-input" type="radio" name="17" id="ime" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                      Immeuble
+                    </label>
+                  </div>
+                  <div class="form-check" style="margin-left: 10%;">
+                    <input class="form-check-input" type="radio" name="17" id="com" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                      Commerce
+                    </label>
+                  </div> <br>
+
+         
+          </div>
+     
+  </div>
+  <div class="column">
+      
+          <div class="form-group">
+              <label for="var-1"> Etage de l'actif </label>
+          <input id="etage" type="number" class="form-control input">
+          
+          <label for="var-1"> Etat des lieux </label>
+          <input id="etat" type="number" class="form-control input">
+
+          
+          <label for="var-1"> Droit Réel ou charge Foncière </label>
+          <input id="droit" type="number" class="form-control input">
+          
+          <label for="var-1"> Etat Apparent </label>
+          <input id="apparent" type="number" class="form-control input">
+          
+          <label for="var-1"> immeuble neuf </label>
+          <input id="neuf" type="number" class="form-control input">
+          </div>
+      
+  </div>
+</div> 
+</div>
+
+
+<!-- part 6 -->
+<div class="part-1" >
+  <div class="bar"></div>
+  <h2 class="title-part">PIÈCES RECUPEREES AUPRES DE LA CONSERVATION</h2>
+  <div class="row">
+      <div class="column" >
+          
+              <div class="form-group">
+                <label for="var-1"> Status de Certificat de propriété : </label>
+                <input id="certif" type="text" class="form-control input">
+
+                <label for="var-1"> status de Plan Cadastral : </label>
+                <input id="splan" type="text" class="form-control input">
+                 
+              </div> <br>     
+        </div>
+         
+      
+      <div class="column">
+          
+              <div class="form-group">
+              
+                <label for="var-1"> Personnes presentes à la visite </label>
+                <input id="visite" type="text" class="form-control input">
+                
+                <label for="var-1" style="margin-top: 12px;">  Commentaire </label><br>
+                <textarea class="form-control" id="tr" name="message" rows="5" style="width: 70%;" ></textarea>
+              </div>      
+      </div>
+  </div> 
+</div>
+
+<!-- part 7 -->
+<div class="part-1" >
+  <div class="bar"></div>
+  <h2 class="title-part">DEFINITION DU BIEN</h2>
+  <div class="row">
+      <div class="column" >
+          
+              <div class="form-group">
+                
+                <label for="var-1" style="margin-top: 12px;"> Definition de bien : </label><br>
+                <textarea class="form-control" id="bon" name="message" rows="7" style="width: 85%;" ></textarea><br>n
+                <h4>Description de l’environnement local <br>et du quartier</h4><br>
+                <label for="var-1"> Situation </label>
+                <input id="sit" type="text" class="form-control input">
+
+                <label for="var-1"> Objet d'usage </label>
+                <input id="obj" type="text" class="form-control input">
+
+                <label for="var-1"> caractere de la zone  </label>
+                <input id="zone" type="text" class="form-control input"><br>
+                
+                <label for="var-1" style="margin-top: 12px;"> Evolution et projection de la zone </label><br>
+                <textarea class="form-control" id="prj" name="message" rows="7" style="width: 85%;" ></textarea><br>
+               
+                <label for="var-1" style="margin-top: 12px;"> Commerces</label><br>
+                <textarea class="form-control" id="cmr" name="message" rows="7" style="width: 85%;" ></textarea><br>
+                
+                <label for="var-1" style="margin-top: 12px;"> Administrations publics </label><br>
+                <textarea class="form-control" id="adm" name="message" rows="7" style="width: 85%;" ></textarea><br>
+              
+              </div> <br>     
+        </div>
+         
+      
+      <div class="column">
+          
+              <div class="form-group">
+
+                <label for="var-1" style="margin-top: 12px;"> 	Atouts du bien  </label><br>
+                <textarea class="form-control" id="atout" name="message" rows="7" style="width: 85%;" ></textarea><br><br><br><br>
+
+                <label for="var-1" style="margin-top: 12px;"> 	Analyse de l'environnement  </label><br>
+                <textarea class="form-control" id="analyse" name="message" rows="7" style="width: 85%;" ></textarea><br><br><br><br>
+
+                
+                <label for="var-1" style="margin-top: 12px;"> Ecoles</label><br>
+                <textarea class="form-control" id="col" name="message" rows="7" style="width: 85%;" ></textarea><br>
+               
+                <label for="var-1" style="margin-top: 12px;"> Agence de Services </label><br>
+                <textarea class="form-control" id="srv" name="message" rows="7" style="width: 85%;" ></textarea><br>
+               
+              </div>      
+      </div>
+  </div> 
+</div>
+
+<!-- part 7-->
+<div class="part-1" >
+  <div class="bar"></div>
+  <h2 class="title-part">REPORTAGE PHOTOGRAPHIQUE</h2><br><br>
+  
+          
+              <div class="form-group">
+                
+                <input type="file" class="form-control input" style="width:35% ; ">
+                
+
+              
+             <br>     
+        
+      
+  </div> 
+</div>
+
+
+<!-- part 8 -->
+<div class="part-1" >
+  <div class="bar"></div>
+  <h2 class="title-part">EVALUATION DU BIEN</h2>
+  <h4 class="title-part">ETAT APPARENT DU BIEN</h4>
+  <div class="row">
+      <div class="column" >
+        
+              <div class="form-group" style="flex: content;">   <br>
+             
+                <label for="var" style="margin-right: 34%;" > Orientation :</label>
+                <input type="number" id="or"    class="form-control-static"  min="1" max="5"><br><br>
+                 
+                <label for="var"  style="margin-right: 5%;"> Présence de place de parking :</label>
+                <input type="number" id="park" class="form-control-static"  min="1" max="5"><br><br>
+
+                <label for="var"  style="margin-right: 8%;"> Etat des parties communes :</label>
+                <input type="number" id="des" class="form-control-static"  min="1" max="5"><br><br>
+
+                <label for="var"  style="margin-right: 18%;"> Organisation spatiale :</label>
+                <input type="number" id="spa" class="form-control-static"  min="1" max="5"><br><br>
+
+                <label for="var"  style="margin-right: 18%;"> Etat des revêtements :</label>
+                <input type="number" id="rev" class="form-control-static"  min="1" max="5"><br><br>
+                
+                <label for="var"  style="margin-right: 19%;"> Accessibilité du bien :</label>
+                <input type="number" id="ben" class="form-control-static"  min="1" max="5"><br><br>
+
+                <h4 class="title-part" style="margin-left: -2%;">SITUATION FONCIERE – JURIDIQUE</h4> <br>
+
+                <label for="var-1"> Conservation Foncière : </label>
+                <input id="var-1" type="text" class="form-control input">
+
+                <label for="var-1"> Propriétaire : </label>
+                <input id="var-1" type="text" class="form-control input">
+
+                <label for="var-1"> Droits réel ou charges foncières : </label>
+                <input id="var-1" type="text" class="form-control input"><br>
+
+                <h4 class="title-part" style="margin-left: -2%;">ETUDE DE MARCHE</h4> <br>
+
+                <label for="var-1" style="margin-top: 12px;"> Périmètre de l’étude :  </label><br>
+                <textarea class="form-control" id="perm" name="message" rows="7" style="width: 85%;" ></textarea><br>
+
+                <label for="var-1" style="margin-top: 12px;"> 	Offre présente sur le périmètre étudié :  </label><br>
+                <textarea class="form-control" id="etd" name="message" rows="7" style="width: 85%;" ></textarea><br>
+
+                <label for="var-1" style="margin-top: 12px;"> 	Baromètre du marché :  </label><br>
+                <textarea class="form-control" id="baro" name="message" rows="7" style="width: 85%;" ></textarea><br>
+
+                
+
+
+
+              </div> <br>     
+        </div>
+         
+      
+      <div class="column">
+            
+              <div class="form-group">   <br>
+                
+                <label for="var"  style="margin-right: 31%;"> Etanchéité :</label>
+                <input type="number" id="etan" class="form-control-static"  min="1" max="5"><br><br>
+
+                <label for="var"  style="margin-right: 20%;"> Etat de la boiserie :</label>
+                <input type="number" id="boi" class="form-control-static"  min="1" max="5"><br><br>
+
+                <label for="var"  style="margin-right: 5%;"> Etat des revêtements de sol :</label>
+                <input type="number" id="sol" class="form-control-static"  min="1" max="5"><br><br>
+                
+                <label for="var"  style="margin-right: 33%;"> Electricité :</label>
+                <input type="number" id="do" class="form-control-static"  min="1" max="5"><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+                <label for="var-1" style="margin-top: 12px;"> 	Prix de vente :  </label><br>
+                <textarea class="form-control" id="prix" name="message" rows="7" style="width: 85%;" ></textarea><br>
+
+                <label for="var-1" style="margin-top: 12px;"> Évolution & projets futurs de la zone : </label><br>
+                <textarea class="form-control" id="future" name="message" rows="7" style="width: 85%;" ></textarea><br>
+
+                <label for="var-1" style="margin-top: 12px;"> 	Différenciation du bien par rapport à l’offre  </label><br>
+                <textarea class="form-control" id="offre" name="message" rows="7" style="width: 85%;" ></textarea><br>
+
+              </div>      
+      </div>
+  </div> 
+</div>
+
+
+<button type="submit" class="btn btn-primary input" (click)="download()">Generer le rapport </button>
+</form>
+
